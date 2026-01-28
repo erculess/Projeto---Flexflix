@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abigail - FLEXFLIX</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../estilizacao/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="logo">FLEXFLIX</div>
+        <div class="search-bar"><input type="text" placeholder="Buscar..."></div>
+    </header>
+
+    <div class="main-wrapper">
+        <nav class="sidebar">
+            <div class="menu">
+                <ul>
+                    <li><a href="../pagina inicial/inicial.html">Início</a></li>
+                    <li><a href="../filmes/filmes.html">Filmes</a></li>
+                    <li><a href="../series/series.html">Séries</a></li>
+                    <li><a href="../pagina contato/contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="content">
+            <a href="../pagina inicial/inicial.html" class="btn-voltar">← Voltar</a>
+            
+            <div class="detalhes-wrapper">
+                <div class="detalhes-img">
+                    <img src="https://uploads.onecompiler.io/43s6e2a5d/44buxcw5c/szrY6NhfuLAl3tgL6XtYKaRvVN.webp" alt="Capa">
+                </div>
+                
+                <div class="detalhes-texto">
+                    <h1 class="detalhes-titulo">Abigail</h1>
+                    <div class="tags">
+                        <span class="tag">2024</span>
+                        <span class="tag">Terror</span>
+                        <span class="tag" style="color:#46d369; border-color:#46d369">9.2 Nota</span>
+                    </div>
+                    
+                    <p>
+                        Uma noite que parecia apenas um sequestro se transforma em um jogo de sobrevivência quando os criminosos descobrem que Abigail não é uma criança comum, mas algo muito mais perigoso.
+                    </p>
+
+                    <div style="display: flex;">
+                        <a href="#" class="btn-acao btn-play">▶ Assistir Agora</a>
+                        <a href="#" class="btn-acao btn-save">+ Minha Lista</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
