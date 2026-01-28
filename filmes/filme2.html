@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interestelar - FLEXFLIX</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../estilizacao/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="logo">FLEXFLIX</div>
+        <div class="search-bar"><input type="text" placeholder="Buscar..."></div>
+    </header>
+
+    <div class="main-wrapper">
+        <nav class="sidebar">
+            <div class="menu">
+                <ul>
+                    <li><a href="../pagina inicial/inicial.html">Início</a></li>
+                    <li><a href="../filmes/filmes.html">Filmes</a></li>
+                    <li><a href="../series/series.html">Séries</a></li>
+                    <li><a href="../pagina contato/contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="content">
+            <a href="../pagina inicial/inicial.html" class="btn-voltar">← Voltar</a>
+            
+            <div class="detalhes-wrapper">
+                <div class="detalhes-img">
+                    <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600" alt="Capa">
+                </div>
+                
+                <div class="detalhes-texto">
+                    <h1 class="detalhes-titulo">Interestelar</h1>
+                    <div class="tags">
+                        <span class="tag">2014</span>
+                        <span class="tag">Ficção Científica</span>
+                        <span class="tag" style="color:#46d369; border-color:#46d369">8.7 Nota</span>
+                    </div>
+                    
+                    <p>
+                        Num futuro em que a Terra está se tornando inabitável, a humanidade envia um grupo de astronautas através de um wormhole (buraco de verme) em busca de planetas habitáveis. Cooper (Matthew McConaughey) lidera a missão ao lado de outros cientistas, deixando para trás seus filhos com a difícil possibilidade de nunca mais voltar. Nesta jornada épica pelo espaço e pelo tempo, eles enfrentam desafios que testam os limites da ciência e da ligação humana.
+                    </p>
+
+                    <div style="display: flex;">
+                        <a href="#" class="btn-acao btn-play">▶ Assistir Agora</a>
+                        <a href="#" class="btn-acao btn-save">+ Minha Lista</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
