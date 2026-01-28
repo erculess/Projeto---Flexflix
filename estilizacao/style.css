@@ -1,0 +1,239 @@
+:root {
+    --cor-fundo: #141414;
+    --cor-cartao: #1f1f1f;
+    --texto-primario: #ffffff;
+    --texto-secundario: #b3b3b3;
+    --destaque: #e50914;
+    --largura-sidebar: 240px;
+    --altura-header: 70px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--texto-primario);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.header {
+    height: var(--altura-header);
+    background-color: #000000;
+    border-bottom: 1px solid #333;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--destaque);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.search-bar input {
+    background: #333;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: white;
+    width: 300px;
+}
+
+.main-wrapper {
+    margin-top: var(--altura-header);
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: var(--largura-sidebar);
+    background-color: #000;
+    border-right: 1px solid #333;
+    padding: 20px 0;
+    position: fixed;
+    top: var(--altura-header);
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a {
+    display: block;
+    padding: 12px 25px;
+    color: var(--texto-secundario);
+    font-weight: 600;
+    border-left: 4px solid transparent;
+}
+
+.menu a.ativo {
+    background-color: #222;
+    color: white;
+    border-left-color: var(--destaque);
+}
+
+.content {
+    margin-left: var(--largura-sidebar);
+    padding: 30px 40px;
+    width: 100%;
+}
+
+.amostra {
+    background-image: url('https://uploads.onecompiler.io/43s6e2a5d/44buxcw5c/szrY6NhfuLAl3tgL6XtYKaRvVN.webp');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.amostra h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--destaque);
+    padding-left: 10px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--cor-cartao);
+    border-radius: 6px;
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+.poster {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.detalhes-wrapper {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.detalhes-img {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.detalhes-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.detalhes-titulo {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.tags {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.tag {
+    border: 1px solid #555;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+.btn-acao {
+    padding: 12px 30px;
+    margin-right: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-play {
+    background-color: white;
+    color: black;
+}
+
+.btn-save {
+    background-color: #444;
+    color: white;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--texto-secundario);
+}
+
+.form-contato {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contato input, 
+.form-contato textarea {
+    padding: 15px;
+    background-color: #333;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
