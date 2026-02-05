@@ -81,7 +81,6 @@ a {
     flex-shrink: 0; /* Não deixa encolher */
     top: var(--altura-header);
     bottom: 0;
-    overflow-y: auto;
 }
 
 .menu ul {
@@ -99,10 +98,11 @@ a {
     border-left: 4px solid transparent;
 }
 
-.menu a.ativo, .menu:hover {
+.menu a.ativo, .btn-menu:hover {
     background-color: #222;
     color: white;
     border-left-color: var(--destaque);
+    transition: 0.3s;
 }
 
 /* Conteúdo da direita */
