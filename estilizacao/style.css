@@ -1,3 +1,4 @@
+/* --- VARIAVEIS --- */
 :root {
     --cor-fundo: #141414;
     --cor-cartao: #1f1f1f;
@@ -29,6 +30,7 @@ a {
     transition: 0.3s;
 }
 
+/* --- HEADER | Barra do topo --- */
 .header {
     height: var(--altura-header);
     background-color: rgba(0, 0, 0, 9);
@@ -61,19 +63,22 @@ a {
     width: 300px;
 }
 
+/* --- LAYOUT PRINCIPAL --- */
 .main-wrapper {
     margin-top: var(--altura-header);
+    /* O corpo da página é um container Flex */
     display: flex;
-    flex: 1;
+    flex: 1; /* Ocupa o resto da altura da tela */
 }
 
+/* sidebar fixa na esquerda */
 .sidebar {
     width: var(--largura-sidebar);
     background-color: #000;
     border-right: 1px solid #333;
     padding: 20px 0;
     position: fixed;
-    flex-shrink: 0;
+    flex-shrink: 0; /* Não deixa encolher */
     top: var(--altura-header);
     bottom: 0;
     overflow-y: auto;
@@ -100,12 +105,14 @@ a {
     border-left-color: var(--destaque);
 }
 
+/* Conteúdo da direita */
 .content {
-    margin-left: var(--largura-sidebar);
+    margin-left: var(--largura-sidebar);/* Empurra o conteúdo para não ficar baixo da sidebar fixa */
     padding: 30px 40px;
-    flex: 1;
+    flex: 1;/* Ocupa todo espaço restante */
 }
 
+/* --- CARDS E GRADE --- */
 .amostra {
     background: linear-gradient(rgba(0,0,0,0.5), #141414),url('https://uploads.onecompiler.io/43s6e2a5d/44buxcw5c/szrY6NhfuLAl3tgL6XtYKaRvVN.webp');
     background-size: cover;
@@ -145,7 +152,7 @@ a {
 .card {
     background-color: var(--cor-cartao);
     border-radius: 6px;
-    flex: 1 1 200px;
+    flex: 1 1 200px;/* Cresce, encolhe, base 200px */
     overflow: hidden;
     cursor: pointer;
     position: relative;
@@ -167,6 +174,7 @@ a {
     object-fit: cover;
 }
 
+/* --- PÁGINA DETALHES --- */
 .detalhes-wrapper {
     background-color: #1a1a1a;
     padding: 40px;
@@ -219,7 +227,6 @@ a {
 }
 
 .btn-acao {
-
     padding: 12px 30px;
     margin-right: 10px;
     border-radius: 4px;
@@ -248,6 +255,7 @@ a {
     color: var(--texto-secundario);
 }
 
+/* --- CONTATO --- */
 .form-contato {
     max-width: 500px;
     display: flex;
