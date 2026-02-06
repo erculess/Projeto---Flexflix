@@ -16,7 +16,8 @@ Todas as páginas seguem uma estrutura padrão no layout:
 * **Página inicial**: Informações padrão de recomendações de streamings;
 * **Página de Filmes**: Dedicada à, somente, os filmes disponíveis;
 * **Página de Séries**: Dedicada à, somente, as séries disponíveis;
-* **Página de Contato**: Apresentando um pequeno formulário (sem destino) para relatar algo.
+* **Página de Contato**: Apresentando um pequeno formulário (sem destino) para relatar algo;
+* **Páginas para filmes e séries**: Mostra especificações detalhadas do filme ou série detalhadamente.
 
 
 # Etapas de entregas
@@ -33,3 +34,4 @@ Todas as páginas seguem uma estrutura padrão no layout:
 * Finalização do código do arquivo CSS com ajustes e novas estilizações;
 * Comentários adicionados ao arquivo CSS para melhor leitura e compreensão.
 * Finalização do projeto em si.
+
